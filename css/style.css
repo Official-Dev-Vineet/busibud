@@ -405,7 +405,7 @@ footer .footer-text p {
   .header-view .text-view h1 {
     font-size: 2.6rem;
   }
-  .partner-container .partner{
+  .partner-container .partner {
     font-size: 1.4rem;
   }
   .partner-container .partner img {
@@ -417,13 +417,12 @@ footer .footer-text p {
   .partner-container .partner:nth-child(3) img {
     max-width: 5.8rem;
   }
-
 }
 @media screen and (max-width: 770px) {
   section {
     padding: 3rem;
   }
-  section > h1{
+  section > h1 {
     font-size: 2rem;
   }
   .header-view {
@@ -487,7 +486,7 @@ footer .footer-text p {
   section .card-container {
     grid-template-columns: 1fr;
   }
-  section.how-we-work .card-container .card .card-image{
+  section.how-we-work .card-container .card .card-image {
     width: 20rem;
     height: 16rem;
   }
@@ -511,28 +510,63 @@ footer .footer-text p {
   section.how-we-work {
     padding: 3rem;
   }
-  .partner-container{
+  .partner-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
+    padding: 3rem;
     white-space: nowrap;
   }
-  .partner-container .partner:nth-child(3){
+  .partner-container .partner:nth-child(3) {
     grid-column: 1/-1;
   }
-  .review-container .btn{
+  .review-container .btn {
     padding: 1rem;
     height: 4rem;
     width: 4rem;
     right: -2rem;
   }
-  section.how-we-work .card-container{
+  section.how-we-work .card-container {
     padding: 0 2rem;
   }
-.card-container .card p{
+  .card-container .card p {
     font-size: 1.4rem;
   }
+  .review-container .review-header {
+    font-size: 2rem;
+  }
 }
-@media screen and (max-width:500px) {
-    
+@media screen and (max-width: 500px) {
+  .header-view {
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+  .header-view .image-view {
+    order: -1;
+    height: 34rem;
+    margin-left: 10rem;
+  }
+  .review-container{
+    padding: 2rem;
+  }
+  .review-container .review-header {
+    font-size: 1.4rem;
+    grid-template-columns: 3.5rem 1fr;
+    gap: 1rem;
+  }
+  .review-container .reviews-area .review-header {
+    font-size: 1.4rem;
+  }
+  .partner-container {
+    grid-template-columns: 1fr;
+  }
+  .partner-container .partner {
+    height: 5rem;
+  }
+  .review-container .reviews-area .review-head .grid{
+    grid-template-columns: 4rem 1fr;
+  }
+  .review-container .reviews-area .review-head .grid img{
+    object-fit: contain;
+  }
 }
